@@ -1111,7 +1111,7 @@
 > if (!Math.trunc) { // 如果没有这个函数
 >   // 实现它
 >   Math.trunc = function(number) {
->     // Math.ceil 和 Math.floor 甚至存在于上古年代的 JavaScript 引擎中
+>     // Math.ceil 和 Math.floor 甚至存在于上古年代的 03_JavaScript 引擎中
 >     // 在本教程的后续章节中会讲到它们
 >     return number < 0 ? Math.ceil(number) : Math.floor(number);
 >   };
@@ -2207,9 +2207,9 @@
 > //我们也可以使用下划线 _ 作为分隔符
 > let billion = 1_000_000_000;
 > 
-> //这里的下划线 _ 扮演了“语法糖”的角色，使得数字具有更强的可读性。JavaScript 引擎会直接忽略数字之间的 _，所以 上面两个例子其实是一样的
+> //这里的下划线 _ 扮演了“语法糖”的角色，使得数字具有更强的可读性。03_JavaScript 引擎会直接忽略数字之间的 _，所以 上面两个例子其实是一样的
 > 
-> //JavaScript 中，我们可以通过在数字后面附加字母 "e" 并指定零的个数来缩短数字
+> //03_JavaScript 中，我们可以通过在数字后面附加字母 "e" 并指定零的个数来缩短数字
 > let billion = 1e9;  // 10 亿，字面意思：数字 1 后面跟 9 个 0
 > 
 > alert( 7.3e9 );  // 73 亿（与 7300000000 和 7_300_000_000 相同）
@@ -2914,14 +2914,14 @@
 >     -   允许负向索引
 >
 > ```js
-> let arr = ["I", "study", "JavaScript"];
+> let arr = ["I", "study", "03_JavaScript"];
 > 
 > arr.splice(1, 1); // 从索引 1 开始删除 1 个元素
 > 
-> alert( arr ); // ["I", "JavaScript"]
+> alert( arr ); // ["I", "03_JavaScript"]
 > 
 > 
-> let arr = ["I", "study", "JavaScript", "right", "now"];
+> let arr = ["I", "study", "03_JavaScript", "right", "now"];
 > 
 > // 删除数组的前三项，并使用其他内容代替它们
 > arr.splice(0, 3, "Let's", "dance");
@@ -2931,14 +2931,14 @@
 > 
 > 
 > // deleteCount 设置为 0，splice 方法就能够插入元素而不用删除任何元素
-> let arr = ["I", "study", "JavaScript"];
+> let arr = ["I", "study", "03_JavaScript"];
 > 
 > // 从索引 2 开始
 > // 删除 0 个元素
 > // 然后插入 "complex" 和 "language"
 > arr.splice(2, 0, "complex", "language");
 > 
-> alert( arr ); // "I", "study", "complex", "language", "JavaScript"
+> alert( arr ); // "I", "study", "complex", "language", "03_JavaScript"
 > 
 > // 在这里和其他数组方法中，负向索引都是被允许的。它们从数组末尾计算位置
 > let arr = [1, 2, 5];
